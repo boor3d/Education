@@ -18,7 +18,7 @@ def test_create_person_num():
     assert type(watch_collection.watches) == dict
 
 
-def test_create_person_num():
-    watch_collection = watchCollection(name=1010)
+def test_create_person_fail():
+    watch_collection = watchCollection(name="Rich")
     assert watch_collection.name == "Intent to Fail"
     assert type(watch_collection.watches) == dict
