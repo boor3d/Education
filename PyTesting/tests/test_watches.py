@@ -17,6 +17,10 @@ def test_create_person_num():
     assert watch_collection.name == "1010"
     assert type(watch_collection.watches) == dict
 
+def test_create_person_dict():
+    watch_collection = watchCollection(name={})
+    assert watch_collection.name == "None"
+    assert type(watch_collection.watches) == dict
 
 def test_create_person_fail():
     watch_collection = watchCollection(name="Rich")
